@@ -9,10 +9,11 @@ USER root
 
 RUN yum update && \
     yum install -y jq \
-    mkdir model raw_data  results
+    mkdir model raw_data  processed_data results
 
 
-ENV RAW_DATA_DIR=/home/mariem/raw_data
+ENV RAW_DATA_DIR=/home/jovyan/raw_data
+ENV PROCESSED_DATA_DIR=/home/jovyan/processed_data
 ENV MODEL_DIR=/home/jovyan/model
 ENV RESULTS_DIR=/home/jovyan/results
 ENV RAW_DATA_FILE=Iris.csv
