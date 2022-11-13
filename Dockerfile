@@ -7,9 +7,9 @@ RUN yum -y install python3-pip \
 
 USER root
 
-RUN yum update -y && \
-    yum install -y jq \
-    mkdir model raw_data  processed_data results
+RUN yum update -y && 
+RUN   yum install -y jq 
+RUN  mkdir model raw_data  processed_data results
 
 
 ENV RAW_DATA_DIR=/home/jovyan/raw_data
