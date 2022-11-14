@@ -11,7 +11,7 @@ USER root
 RUN yum update -y 
 RUN yum install epel-release -y
 RUN yum install jq.x86_64 -y
-RUN pip3 install --no-cache-dir pandas && \
+RUN pip3 install --no-cache-dir pandas
 
 
 RUN mkdir model raw_data  processed_data results
