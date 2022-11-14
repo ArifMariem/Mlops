@@ -10,6 +10,8 @@ USER root
 RUN yum update -y 
 RUN yum install epel-release -y
 RUN yum install jq.x86_64 -y
+
+
 RUN mkdir model raw_data  processed_data results
 
 
@@ -23,3 +25,4 @@ ENV RAW_DATA_FILE=Iris.csv
 COPY Iris.csv ./raw_data/Iris.csv
 COPY train.py ./train.py
 COPY test.py ./test.py
+COPY preprocessing.py ./preprocessing.py
