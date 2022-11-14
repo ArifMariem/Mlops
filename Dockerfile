@@ -8,8 +8,8 @@ RUN yum -y install python3-pip \
 USER root
 
 RUN yum update -y 
-RUN yum install epel-release 
-RUN yum install jq.x86_64
+RUN yum install epel-release -y
+RUN yum install jq.x86_64 -y
 RUN mkdir model raw_data  processed_data results
 
 
