@@ -14,6 +14,7 @@ RUN yum install jq.x86_64 -y
 RUN pip3 install --no-cache-dir pandas
 RUN pip3 install --no-cache-dir joblib
 RUN pip3 install --no-cache-dir pickle4
+RUN pip3 install --no-cache-dir scikit-learn
 
 RUN mkdir model raw_data  processed_data results
 
