@@ -1,7 +1,6 @@
 FROM jupyter/scipy-notebook
 FROM centos:7
 
-COPY wheels ./wheels
 
 RUN yum -y install python3-pip \
     pip3 install joblib\
