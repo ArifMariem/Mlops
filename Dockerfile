@@ -8,7 +8,7 @@ RUN yum -y install python3-pip \
 USER root
 
 RUN yum update -y 
-RUN   yum install -y jq 
+RUN   yum install -y jp
 RUN  mkdir model raw_data  processed_data results
 
 
