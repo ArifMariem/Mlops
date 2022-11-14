@@ -21,7 +21,7 @@ train_data_file = 'Iris.csv'
 raw_data_path = os.path.join(RAW_DATA_DIR, RAW_DATA_FILE)
 
 # Read dataset
-data = pd.read_csv(raw_data_path, sep=",")
+data = pd.read_csv("./raw_data/Iris.csv", sep=",")
 
 
 #preprocess
