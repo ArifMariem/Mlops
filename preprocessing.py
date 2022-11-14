@@ -15,6 +15,8 @@ from sklearn.linear_model import LogisticRegression
 
 # Set path for the input
 RAW_DATA_DIR = os.environ["RAW_DATA_DIR"]
+RAW_DATA_FILE=os.environ["RAW_DATA_FILE"]
+
 train_data_file = 'Iris.csv'
 raw_data_path = os.path.join(RAW_DATA_DIR, RAW_DATA_FILE)
 
