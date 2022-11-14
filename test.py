@@ -23,7 +23,7 @@ test_data_path = os.path.join(PROCESSED_DATA_DIR, test_data_file)
 logit_model = load(model_path)
 
 # Load data
-df = pd.read_csv(test_data_path, sep=",")
+df = pd.read_csv("./test.py", sep=",")
 
 
 # Split data into dependent and independent variables

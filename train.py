@@ -20,7 +20,7 @@ train_data_path = os.path.join(PROCESSED_DATA_DIR, train_data_file)
 
 
 #read data
-df = pd.read_csv(train_data_path, sep=",")
+df = pd.read_csv("./train.py", sep=",")
 
 
 #model
