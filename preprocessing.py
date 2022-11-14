@@ -21,7 +21,7 @@ train_data_file = 'Iris.csv'
 raw_data_path = os.path.join(RAW_DATA_DIR, RAW_DATA_FILE)
 
 # Read dataset
-data = pd.read_csv("./raw_data/Iris.csv", sep=",")
+df = pd.read_csv("./raw_data/Iris.csv", sep=",")
 
 
 #preprocess
@@ -32,7 +32,7 @@ x = df.drop('Species', axis=1)
 y = df['Species']
 
 #split data train and test
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=30)
+train, test = train_test_split(data, test_size=0.3, stratify=data['Species'])
 
 # Set path to the outputs
 PROCESSED_DATA_DIR = os.environ["PROCESSED_DATA_DIR"]

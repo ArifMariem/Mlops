@@ -23,16 +23,16 @@ test_data_path = os.path.join(PROCESSED_DATA_DIR, test_data_file)
 logit_model = load(model_path)
 
 # Load data
-df = pd.read_csv("./test.py", sep=",")
+df = pd.read_csv("/home/jovyan/processed_data/test.py", sep=",")
 
 
 # Split data into dependent and independent variables
 # Drop useless variables
-X_test = df.drop(['Species'], axis=1)
+x_test = df.drop(['Species'], axis=1)
 y_test = df['Species']
 
 # Predict
-logit_predictions = logit_model.predict(X_test)
+logit_predictions = logit_model.predict(x_test)
 
 # Compute test accuracy
 test_logit = accuracy_score(y_test,logit_predictions)

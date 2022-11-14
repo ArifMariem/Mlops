@@ -20,9 +20,10 @@ train_data_path = os.path.join(PROCESSED_DATA_DIR, train_data_file)
 
 
 #read data
-df = pd.read_csv("./train.py", sep=",")
+df = pd.read_csv("/home/jovyan/processed_data/train.py", sep=",")
 
-
+x_train = df.drop(['Species'], axis='columns')
+y_train = df['Species']
 #model
 model = LogisticRegression()
 model=model.fit(x_train, y_train)
