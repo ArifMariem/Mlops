@@ -2,7 +2,9 @@ FROM jupyter/scipy-notebook
 FROM centos:7
 
 RUN yum -y install python3-pip \
-    pip3 install joblib
+    pip3 install joblib\
+	pip3 install pandas\
+	pip3 install numpy
 
 
 USER root
